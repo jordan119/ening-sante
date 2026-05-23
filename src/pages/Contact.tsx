@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { 
-  Zap, MapPin, Phone, Mail, Clock, MessageCircle, 
-  ShieldCheck, FileText, CheckCircle2 
+  Zap, MapPin, Phone, Mail, Clock, MessageCircle
 } from 'lucide-react';
 
 export function Contact() {

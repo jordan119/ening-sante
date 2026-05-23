@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, ReactNode } from 'react';
 import { Landmark, Building2, Factory, Scale, Hospital, ChevronDown, Check } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -8,7 +8,7 @@ type CibleContent = {
   solutions: string[];
 };
 
-const ciblesData: { id: string; title: string; icon: JSX.Element; content: CibleContent | null }[] = [
+const ciblesData: { id: string; title: string; icon: ReactNode; content: CibleContent | null }[] = [
   {
     id: "finance",
     title: "Institutions Financières & Banques",
