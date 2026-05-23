@@ -1,4 +1,4 @@
-import { useState, ReactNode } from 'react';
+import { useState, type ReactNode } from 'react';
 import { Landmark, Building2, Factory, Scale, Hospital, ChevronDown, Check } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
