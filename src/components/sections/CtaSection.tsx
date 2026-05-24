@@ -1,5 +1,6 @@
 import { Zap } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 export function CtaSection() {
   return (
@@ -12,15 +13,15 @@ export function CtaSection() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
-            Un besoin qui couvre plusieurs pôles ?
+            Prête pour un diagnostic flash de 48h ?
           </h2>
           <p className="text-emerald-50 text-[17px] md:text-lg mb-8">
-            Commencez par un Diagnostic Flash 48h — nous identifions vos priorités.
+            Identifions ensemble vos 3 risques majeurs.
           </p>
-          <button className="inline-flex items-center gap-2 bg-coral-apricot-600 text-white font-semibold text-[15px] px-8 py-3.5 rounded-lg hover:bg-coral-apricot-700 transition-colors shadow-lg group">
+          <Link to="/contact" className="inline-flex items-center gap-2 bg-coral-apricot-600 text-white font-semibold text-[15px] px-8 py-3.5 rounded-lg hover:bg-coral-apricot-700 transition-colors shadow-lg group">
             <Zap size={18} className="group-hover:scale-110 transition-transform" />
             Réserver mon Diagnostic Flash Gratuit
-          </button>
+          </Link>
         </motion.div>
       </div>
     </section>
