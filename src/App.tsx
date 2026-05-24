@@ -11,7 +11,7 @@ import { EspaceClient } from './pages/EspaceClient';
 
 function PublicLayout() {
   return (
-    <div className="min-h-screen bg-white flex flex-col">
+    <div className="min-h-screen bg-neutral-white flex flex-col">
       <Navbar />
       
       <div className="flex-grow flex flex-col">

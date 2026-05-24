@@ -18,7 +18,7 @@ export function EspaceClient() {
   return (
     <div className="min-h-screen bg-[#fafafa] text-gray-800 font-sans flex flex-col">
       {/* Header */}
-      <header className="bg-white border-b border-gray-200 px-6 py-4 flex justify-between items-center">
+      <header className="bg-neutral-white border-b border-gray-200 px-6 py-4 flex justify-between items-center">
         <div className="flex items-center gap-3">
           <div className="bg-[#155e42] p-2 rounded-lg flex items-center justify-center">
             <Shield size={24} className="text-white" strokeWidth={2} />
@@ -60,7 +60,7 @@ export function EspaceClient() {
           {/* Content Area */}
           <div className="flex-grow flex flex-col">
             {activeTab === 'contrats' && (
-              <div className="bg-white border border-gray-200 rounded-2xl flex-grow flex flex-col items-center justify-center shadow-sm min-h-[500px]">
+              <div className="bg-neutral-white border border-gray-200 rounded-2xl flex-grow flex flex-col items-center justify-center shadow-sm min-h-[500px]">
                 <FileText size={48} strokeWidth={1.5} className="mb-4 text-[#64748b]" />
                 <p className="text-[15px] font-medium text-[#64748b]">Aucun contrat pour le moment.</p>
               </div>
@@ -69,7 +69,7 @@ export function EspaceClient() {
             {activeTab === 'calendrier' && <CalendarView />}
 
             {activeTab !== 'contrats' && activeTab !== 'calendrier' && (
-              <div className="bg-white border border-gray-200 rounded-2xl flex-grow flex flex-col items-center justify-center shadow-sm min-h-[500px]">
+              <div className="bg-neutral-white border border-gray-200 rounded-2xl flex-grow flex flex-col items-center justify-center shadow-sm min-h-[500px]">
                 <p className="text-[15px] font-medium text-[#64748b]">Contenu en cours de développement...</p>
               </div>
             )}

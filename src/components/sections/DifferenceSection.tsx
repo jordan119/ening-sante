@@ -26,7 +26,7 @@ export function DifferenceSection() {
   ];
 
   return (
-    <section className="bg-white pb-24 px-6 sm:px-10 lg:px-16 xl:px-24">
+    <section className="bg-neutral-white pb-24 px-6 sm:px-10 lg:px-16 xl:px-24">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <motion.div
@@ -35,7 +35,7 @@ export function DifferenceSection() {
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.5 }}
           >
-            <span className="text-primary font-bold text-[10px] tracking-widest uppercase mb-4 block">
+            <span className="text-mint-leaf-600 font-bold text-[10px] tracking-widest uppercase mb-4 block">
               Ce qui nous distingue
             </span>
             <h2 className="text-[26px] md:text-[32px] lg:text-[38px] font-extrabold text-gray-900 tracking-tight">
@@ -52,7 +52,7 @@ export function DifferenceSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white border border-gray-100 hover:border-emerald-200 transition-colors rounded-[24px] p-6 lg:p-8 shadow-sm flex flex-col sm:flex-row gap-5 items-start"
+              className="bg-neutral-white border border-gray-100 hover:border-emerald-200 transition-colors rounded-[24px] p-6 lg:p-8 shadow-sm flex flex-col sm:flex-row gap-5 items-start"
             >
               <div className="bg-[#f0f9f4] p-4 rounded-xl shrink-0">
                 {diff.icon}

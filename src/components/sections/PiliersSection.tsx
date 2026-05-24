@@ -27,11 +27,11 @@ export function PiliersSection() {
   ];
 
   return (
-    <section className="bg-white py-24 px-4 sm:px-6 lg:px-8">
+    <section className="bg-neutral-white py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="text-primary font-bold text-xs tracking-widest uppercase mb-3 block">
+          <span className="text-mint-leaf-600 font-bold text-xs tracking-widest uppercase mb-3 block">
             Notre approche
           </span>
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">
@@ -51,7 +51,7 @@ export function PiliersSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="flex flex-col bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-xl hover:shadow-black/5 transition-all duration-300 group"
+              className="flex flex-col bg-neutral-white border border-gray-200 rounded-2xl p-6 hover:shadow-xl hover:shadow-black/5 transition-all duration-300 group"
             >
               {/* Icon */}
               <div className="mb-6 text-gray-800 group-hover:scale-110 transition-transform origin-left">
@@ -90,7 +90,7 @@ export function PiliersSection() {
               <div className="w-full h-px bg-gray-100 mb-4"></div>
 
               {/* Résultat */}
-              <div className="flex items-start gap-2 text-primary font-semibold text-sm">
+              <div className="flex items-start gap-2 text-mint-leaf-600 font-semibold text-sm">
                 <Check size={18} className="mt-0.5 shrink-0" strokeWidth={2.5} />
                 <span>{pilier.resultat}</span>
               </div>

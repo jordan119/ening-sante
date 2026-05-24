@@ -46,7 +46,7 @@ const polesData = [
 
 export function PolesSection() {
   return (
-    <section className="bg-white pb-24 px-4 sm:px-6 lg:px-8">
+    <section className="bg-neutral-white pb-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto space-y-10 lg:space-y-12">
         {polesData.map((pole, index) => (
           <motion.div
@@ -55,15 +55,15 @@ export function PolesSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: index * 0.1 }}
-            className="border border-gray-200 rounded-[20px] overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 bg-white"
+            className="border border-gray-200 rounded-[20px] overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 bg-neutral-white"
           >
             {/* Header */}
             <div className="bg-[#f6fbf8] p-6 sm:px-8 sm:py-7 flex items-center gap-5 border-b border-gray-200">
-              <div className="shrink-0 bg-white shadow-sm p-3 rounded-xl border border-gray-100">
+              <div className="shrink-0 bg-neutral-white shadow-sm p-3 rounded-xl border border-gray-100">
                 {pole.icon}
               </div>
               <div>
-                <span className="text-primary font-bold text-[11px] tracking-widest uppercase mb-1.5 block">
+                <span className="text-mint-leaf-600 font-bold text-[11px] tracking-widest uppercase mb-1.5 block">
                   Pôle {pole.id}
                 </span>
                 <h2 className="text-xl md:text-[22px] font-extrabold text-gray-900 tracking-tight">
@@ -78,7 +78,7 @@ export function PolesSection() {
                 <div key={i} className={`p-6 sm:px-8 sm:py-6 ${i !== pole.items.length - 1 ? 'border-b border-gray-100' : ''}`}>
                   <div className="flex gap-4">
                     <div className="shrink-0 mt-1.5">
-                      <div className="w-2 h-2 rounded-full bg-primary shadow-sm shadow-primary/30"></div>
+                      <div className="w-2 h-2 rounded-full bg-mint-leaf-600 shadow-sm shadow-mint-leaf-600/30"></div>
                     </div>
                     <div>
                       <h3 className="font-bold text-gray-900 text-[15px] mb-1.5">{item.title}</h3>
@@ -91,7 +91,7 @@ export function PolesSection() {
 
             {/* Footer */}
             <div className="bg-[#f6fbf8] p-5 sm:px-8 sm:py-5 border-t border-gray-200 flex justify-end">
-              <button className="bg-primary text-white px-5 py-2.5 rounded-lg text-sm font-semibold flex items-center gap-2 hover:bg-primary-hover transition-colors shadow-md shadow-primary/20 group">
+              <button className="bg-mint-leaf-600 text-white px-5 py-2.5 rounded-lg text-sm font-semibold flex items-center gap-2 hover:bg-mint-leaf-600-hover transition-colors shadow-md shadow-mint-leaf-600/20 group">
                 <Zap size={16} fill="currentColor" className="group-hover:scale-110 transition-transform" />
                 Demander un devis pour ce pôle
               </button>

@@ -31,11 +31,11 @@ export function SecteursSection() {
   ];
 
   return (
-    <section className="bg-white py-12 md:py-16 px-4 sm:px-6 lg:px-8 flex flex-col justify-center min-h-[40vh] md:max-h-[50vh]">
+    <section className="bg-neutral-white py-12 md:py-16 px-4 sm:px-6 lg:px-8 flex flex-col justify-center min-h-[40vh] md:max-h-[50vh]">
       <div className="max-w-6xl mx-auto w-full">
         {/* Header */}
         <div className="text-center mb-10">
-          <span className="text-primary font-bold text-xs tracking-widest uppercase mb-3 block">
+          <span className="text-mint-leaf-600 font-bold text-xs tracking-widest uppercase mb-3 block">
             Secteurs d'intervention
           </span>
           <h2 className="text-2xl md:text-3xl lg:text-[32px] font-extrabold text-gray-900 tracking-tight">

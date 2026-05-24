@@ -5,14 +5,14 @@ export function Services() {
   return (
     <>
       {/* Hero Section Services */}
-      <section className="bg-white py-16 px-4 sm:px-6 lg:px-8 flex flex-col justify-center items-center text-center min-h-[40vh] md:h-[60vh] md:max-h-[600px]">
+      <section className="bg-neutral-white py-16 px-4 sm:px-6 lg:px-8 flex flex-col justify-center items-center text-center min-h-[40vh] md:h-[60vh] md:max-h-[600px]">
         <div className="max-w-4xl mx-auto w-full">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <span className="text-primary font-bold text-xs tracking-widest uppercase mb-4 block">
+            <span className="text-mint-leaf-600 font-bold text-xs tracking-widest uppercase mb-4 block">
               L'expertise de terrain
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6 tracking-tight">

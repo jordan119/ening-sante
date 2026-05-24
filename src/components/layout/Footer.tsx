@@ -10,7 +10,7 @@ export function Footer() {
           <div className="lg:col-span-2 flex flex-col gap-6">
             <div>
               <div className="flex items-center gap-3 mb-2">
-                <div className="bg-primary text-white p-2 rounded-lg">
+                <div className="bg-mint-leaf-600 text-white p-2 rounded-lg">
                   <ShieldCheck size={24} strokeWidth={2.5} />
                 </div>
                 <div className="flex flex-col">
@@ -26,15 +26,15 @@ export function Footer() {
 
             <ul className="flex flex-col gap-3 mt-2 text-sm text-gray-400">
               <li className="flex items-center gap-3 hover:text-white transition-colors">
-                <MapPin size={18} className="text-primary" />
+                <MapPin size={18} className="text-mint-leaf-600" />
                 <span>Ekié – Complexe Beac – Yaoundé, Cameroun</span>
               </li>
               <li className="flex items-center gap-3 hover:text-white transition-colors">
-                <Phone size={18} className="text-primary" />
+                <Phone size={18} className="text-mint-leaf-600" />
                 <span>+237 622 114 428</span>
               </li>
               <li className="flex items-center gap-3 hover:text-white transition-colors">
-                <Mail size={18} className="text-primary" />
+                <Mail size={18} className="text-mint-leaf-600" />
                 <a href="mailto:contact@mebakoua-sante.com">contact@mebakoua-sante.com</a>
               </li>
             </ul>

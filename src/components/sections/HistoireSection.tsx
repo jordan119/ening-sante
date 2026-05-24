@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export function HistoireSection() {
   return (
-    <section className="bg-white pb-24 px-6 sm:px-10 lg:px-16 xl:px-24">
+    <section className="bg-neutral-white pb-24 px-6 sm:px-10 lg:px-16 xl:px-24">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

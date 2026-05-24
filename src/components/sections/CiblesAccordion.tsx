@@ -124,7 +124,7 @@ export function CiblesAccordion() {
   };
 
   return (
-    <section className="bg-white pb-24 px-4 sm:px-6 lg:px-8">
+    <section className="bg-neutral-white pb-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto space-y-4">
         {ciblesData.map((cible, index) => {
           const isOpen = openId === cible.id;
@@ -136,11 +136,11 @@ export function CiblesAccordion() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className={`border rounded-2xl overflow-hidden transition-all duration-300 ${isOpen ? 'border-primary/30 shadow-md ring-1 ring-primary/10' : 'border-gray-200 hover:border-gray-300 shadow-sm'}`}
+              className={`border rounded-2xl overflow-hidden transition-all duration-300 ${isOpen ? 'border-mint-leaf-600/30 shadow-md ring-1 ring-primary/10' : 'border-gray-200 hover:border-gray-300 shadow-sm'}`}
             >
               <button
                 onClick={() => toggleAccordion(cible.id)}
-                className="w-full flex items-center justify-between p-5 sm:p-6 bg-white focus:outline-none"
+                className="w-full flex items-center justify-between p-5 sm:p-6 bg-neutral-white focus:outline-none"
               >
                 <div className="flex items-center gap-5 text-left">
                   <div className="shrink-0 bg-[#f6fbf8] p-3 rounded-xl">
@@ -164,7 +164,7 @@ export function CiblesAccordion() {
                     transition={{ duration: 0.3, ease: "easeInOut" }}
                   >
                     {cible.content ? (
-                      <div className="border-t border-gray-100 bg-white grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-100">
+                      <div className="border-t border-gray-100 bg-neutral-white grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-100">
                         {/* Problèmes */}
                         <div className="p-6">
                           <h4 className="text-[#f75e5e] font-bold text-[13px] tracking-wider uppercase mb-5">Problèmes</h4>
@@ -191,11 +191,11 @@ export function CiblesAccordion() {
                         </div>
                         {/* Solutions */}
                         <div className="p-6 bg-[#f9fcf9] md:bg-transparent">
-                          <h4 className="text-primary font-bold text-[13px] tracking-wider uppercase mb-5">Solutions Ening Santé</h4>
+                          <h4 className="text-mint-leaf-600 font-bold text-[13px] tracking-wider uppercase mb-5">Solutions Ening Santé</h4>
                           <ul className="space-y-4">
                             {cible.content.solutions.map((item, i) => (
                               <li key={i} className="flex gap-2.5 items-start">
-                                <Check size={18} className="text-primary shrink-0 mt-0.5" strokeWidth={2.5} />
+                                <Check size={18} className="text-mint-leaf-600 shrink-0 mt-0.5" strokeWidth={2.5} />
                                 <span className="text-gray-800 text-[14.5px] leading-snug">{item}</span>
                               </li>
                             ))}

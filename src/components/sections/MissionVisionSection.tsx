@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export function MissionVisionSection() {
   return (
-    <section className="bg-white pb-24 px-6 sm:px-10 lg:px-16 xl:px-24">
+    <section className="bg-neutral-white pb-24 px-6 sm:px-10 lg:px-16 xl:px-24">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Mission Card */}
         <motion.div
@@ -11,7 +11,7 @@ export function MissionVisionSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.5 }}
-          className="bg-white border border-gray-100 hover:border-emerald-200 transition-colors rounded-[24px] p-8 md:p-10 shadow-sm"
+          className="bg-neutral-white border border-gray-100 hover:border-emerald-200 transition-colors rounded-[24px] p-8 md:p-10 shadow-sm"
         >
           <div className="mb-6">
             <Target size={36} className="text-[#f75e5e]" strokeWidth={2} />

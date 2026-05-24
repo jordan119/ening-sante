@@ -7,23 +7,95 @@
   /* Police par défaut */
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-  /* Couleurs Ening Santé */
-  --color-primary: #064E3B; /* Vert forêt profond */
-  --color-primary-hover: #022C22;
-  --color-accent: #D1FAE5; /* Vert menthe clair (onglet/badge) */
-  --color-accent-hover: #A7F3D0;
-  
-  --color-text-main: #111827; /* Gris anthracite */
-  --color-text-muted: #4B5563; /* Gris moyen */
-  --color-bg-light: #F9FAFB; /* Gris très clair pour sections */
+  /* Nouvelle palette de couleurs structurée */
+  /* aquamarine */
+  --color-aquamarine-50: rgb(229 255 245);
+  --color-aquamarine-100: rgb(204 255 235);
+  --color-aquamarine-200: rgb(153 255 214);
+  --color-aquamarine-300: rgb(102 255 194);
+  --color-aquamarine-400: rgb(51 255 173);
+  --color-aquamarine-500: rgb(0 255 153);
+  --color-aquamarine-600: rgb(0 204 122);
+  --color-aquamarine-700: rgb(0 153 92);
+  --color-aquamarine-800: rgb(0 102 61);
+  --color-aquamarine-900: rgb(0 51 31);
+  --color-aquamarine-950: rgb(0 36 21);
+
+  /* celadon */
+  --color-celadon-50: rgb(234 250 239);
+  --color-celadon-100: rgb(214 245 223);
+  --color-celadon-200: rgb(173 235 192);
+  --color-celadon-300: rgb(132 225 160);
+  --color-celadon-400: rgb(91 215 128);
+  --color-celadon-500: rgb(50 205 96);
+  --color-celadon-600: rgb(40 164 77);
+  --color-celadon-700: rgb(30 123 58);
+  --color-celadon-800: rgb(20 82 39);
+  --color-celadon-900: rgb(10 41 19);
+  --color-celadon-950: rgb(7 29 13);
+
+  /* mint-leaf */
+  --color-mint-leaf-50: rgb(238 247 243);
+  --color-mint-leaf-100: rgb(220 239 230);
+  --color-mint-leaf-200: rgb(185 223 205);
+  --color-mint-leaf-300: rgb(150 207 180);
+  --color-mint-leaf-400: rgb(115 191 156);
+  --color-mint-leaf-500: rgb(80 175 131);
+  --color-mint-leaf-600: rgb(64 140 105);
+  --color-mint-leaf-700: rgb(48 105 78);
+  --color-mint-leaf-800: rgb(32 70 52);
+  --color-mint-leaf-900: rgb(16 35 26);
+  --color-mint-leaf-950: rgb(11 24 18);
+
+  /* dark-cyan */
+  --color-dark-cyan-50: rgb(239 245 246);
+  --color-dark-cyan-100: rgb(222 235 237);
+  --color-dark-cyan-200: rgb(190 216 218);
+  --color-dark-cyan-300: rgb(157 196 200);
+  --color-dark-cyan-400: rgb(124 177 182);
+  --color-dark-cyan-500: rgb(92 157 163);
+  --color-dark-cyan-600: rgb(73 126 131);
+  --color-dark-cyan-700: rgb(55 94 98);
+  --color-dark-cyan-800: rgb(37 63 65);
+  --color-dark-cyan-900: rgb(18 31 33);
+  --color-dark-cyan-950: rgb(13 22 23);
+
+  /* evergreen */
+  --color-evergreen-50: rgb(229 255 249);
+  --color-evergreen-100: rgb(204 255 242);
+  --color-evergreen-200: rgb(153 255 230);
+  --color-evergreen-300: rgb(102 255 117);
+  --color-evergreen-400: rgb(51 255 204);
+  --color-evergreen-500: rgb(0 255 191);
+  --color-evergreen-600: rgb(0 204 153);
+  --color-evergreen-700: rgb(0 153 115);
+  --color-evergreen-800: rgb(0 102 77);
+  --color-evergreen-900: rgb(0 51 38);
+  --color-evergreen-950: rgb(0 36 27);
+
+  /* coral-apricot */
+  --color-coral-apricot-50: rgb(255 243 240);
+  --color-coral-apricot-100: rgb(255 224 214);
+  --color-coral-apricot-200: rgb(255 189 168);
+  --color-coral-apricot-300: rgb(255 147 112);
+  --color-coral-apricot-400: rgb(255 106 61);
+  --color-coral-apricot-500: rgb(249 75 22);
+  --color-coral-apricot-600: rgb(214 53 4);
+  --color-coral-apricot-700: rgb(168 39 0);
+  --color-coral-apricot-800: rgb(122 29 0);
+  --color-coral-apricot-900: rgb(77 18 0);
+  --color-coral-apricot-950: rgb(51 12 0);
+
+  /* neutral */
+  --color-neutral-white: rgb(255 255 255);
 }
 
 @layer base {
   html, body {
-    @apply font-sans text-text-main bg-white antialiased m-0 p-0;
+    @apply font-sans text-dark-cyan-950 bg-neutral-white antialiased m-0 p-0;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bold text-text-main tracking-tight;
+    @apply font-bold text-dark-cyan-950 tracking-tight;
   }
 }

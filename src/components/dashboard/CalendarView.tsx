@@ -78,7 +78,7 @@ export function CalendarView() {
       <div className="flex flex-col lg:flex-row gap-6 items-start">
         
         {/* Left Column: Calendar Grid */}
-        <div className="flex-grow w-full bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+        <div className="flex-grow w-full bg-neutral-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
           {/* Header Calendrier */}
           <div className="flex justify-between items-center p-6 border-b border-gray-100">
             <h3 className="text-[18px] font-bold text-gray-900 capitalize">
@@ -127,7 +127,7 @@ export function CalendarView() {
                     key={`curr-${day}`} 
                     onClick={() => setSelectedDate(day)}
                     className={`h-24 border-r border-b border-gray-100 p-2 text-[13px] font-medium cursor-pointer transition-colors relative flex flex-col
-                      ${isSelected ? 'bg-emerald-50/50 border-emerald-200' : 'bg-white hover:bg-gray-50'}
+                      ${isSelected ? 'bg-emerald-50/50 border-emerald-200' : 'bg-neutral-white hover:bg-gray-50'}
                     `}
                   >
                     {/* Numéro du jour */}
@@ -179,7 +179,7 @@ export function CalendarView() {
                 Visite du {selectedDate} {MONTH_NAMES[month]} {year}
               </h4>
               {selectedVisits.map((visit, idx) => (
-                <div key={idx} className="bg-white border border-gray-100 p-4 rounded-xl shadow-sm flex flex-col gap-2">
+                <div key={idx} className="bg-neutral-white border border-gray-100 p-4 rounded-xl shadow-sm flex flex-col gap-2">
                   <div className="flex items-center gap-2">
                     <div className={`w-2 h-2 rounded-full ${getStatusColor(visit.status)}`}></div>
                     <span className="font-bold text-[14px] text-gray-900 leading-tight">{visit.title}</span>
@@ -196,14 +196,14 @@ export function CalendarView() {
               ))}
             </div>
           ) : (
-            <div className="border border-dashed border-gray-300 rounded-2xl p-8 flex flex-col items-center justify-center text-center text-gray-500 h-40 bg-white">
+            <div className="border border-dashed border-gray-300 rounded-2xl p-8 flex flex-col items-center justify-center text-center text-gray-500 h-40 bg-neutral-white">
               <CalendarIcon size={28} className="mb-3 text-gray-400" />
               <p className="text-[13px] leading-relaxed">Cliquez sur une visite dans le calendrier pour voir les détails</p>
             </div>
           )}
           
           {/* Résumé du mois */}
-          <div className="border border-gray-200 rounded-2xl p-6 shadow-sm bg-white">
+          <div className="border border-gray-200 rounded-2xl p-6 shadow-sm bg-neutral-white">
             <h4 className="text-[11px] font-bold tracking-widest text-gray-500 uppercase mb-3">
               CE MOIS — {currentMonthVisitsCount} VISITE{currentMonthVisitsCount !== 1 ? 'S' : ''}
             </h4>
